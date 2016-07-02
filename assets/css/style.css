@@ -217,6 +217,11 @@ footer.page-footer {
     margin-top: 20px;
 }
 
+.about-text {
+    font-size: 1em;
+    color: white;
+}
+
 /*
     Experience
  */
