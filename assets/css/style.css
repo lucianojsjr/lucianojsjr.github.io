@@ -1,273 +1,83 @@
-/* =====================
-          Fonts
-   ===================== */
-
-@font-face {
-    font-family: 'Lobster';
-    src: url(../fonts/LobsterTwo-Regular.otf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lobster';
-    src: url(../fonts/LobsterTwo-Bold.otf);
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lobster';
-    src: url(../fonts/LobsterTwo-BoldItalic.otf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Lobster';
-    src: url(../fonts/LobsterTwo-Italic.otf);
-    font-weight: normal;
-    font-style: italic;
-}
-
-
-/* =====================
-          Utility
-   ===================== */
-
-a {
-    color: inherit;
-}
-
-.exo-font {
-    font-family: 'Exo 2';
-}
-
-.lobster-font {
-    font-family: 'Lobster';
-}
-
-.main-bg {
-    background-color: #292929 !important;
-}
-
-.no-spacing {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.skill-name {
-    font-family: 'Lobster';
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px !important;
-}
-
-.content-topic {
-    font-family: 'Lobster';
-    font-weight: bold;
-}
-
-
-/* =====================
-        Materialize
-   ===================== */
-
-nav ul a,
-nav .brand-logo {
-    color: #444;
-}
-
-p {
-    line-height: 2rem;
-}
-
-.button-collapse {
-    color: #26a69a;
-}
-
-.parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255, 255, 255, .9);
-}
-
-.parallax-container .section {
-    width: 100%;
-}
-
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
-}
-
-.icon-block {
-    padding: 0 15px;
-}
-
-.icon-block .material-icons {
-    font-size: inherit;
-}
-
-footer.page-footer {
+/**
+    Reset CSS
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.card-content span {
-    font-size: 3.5em;
-    text-align: center;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
 }
 
+body {
+    line-height: 1;
+}
 
-/* =====================
-         My CSS
-   ===================== */
+ol, ul {
+    list-style: none;
+}
 
+blockquote, q {
+    quotes: none;
+}
 
-/*
-    Menu
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**
+    Under construction
  */
 
-.sidemenu {
-    background-image: url('../img/sidemenu-bg.jpg');
+.bg-gradient {
+    vertical-align: middle;
+    height: 100vh;
+    background: #136a8a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #136a8a, #267872); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #136a8a, #267872); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #136a8a, #267872); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #136a8a, #3f9f99); /* Standard syntax */
 }
 
-.sidemenu .item {
-    font-family: 'Lobster';
-    font-size: 2em;
-    font-weight: bold;
-    color: #fff;
-}
-
-.languages li {
-    margin-left: 0.5em;
-}
-
-.languages li:hover {
-    cursor: pointer;
-}
-
-.menu-options {
-    margin-top: 3em;
-}
-
-.menu-options li {
+.title {
     font-family: 'Exo 2';
-    font-weight: 800;
-    font-size: 1.3em;
-    color: red;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-
-.menu-options li + li:before {
-    content: "/";
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-
-/*
-    Profile
- */
-
-.profile-info {
-    margin-top: 70px;
-}
-
-.profile-info img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-size: cover;
-}
-
-.profile-info .name {
-    font-family: 'Exo 2';
-    font-size: 2em;
     font-weight: bold;
-    margin-bottom: 2.5em;
-}
-
-.separator {
-    border-bottom: 1px solid white;
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about hr {
-    margin-top: 20px;
-}
-
-.about-text {
-    font-size: 1em;
     color: white;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 100px;
 }
 
-/*
-    Experience
- */
-
-
-.experience-image {
-    width: 192px;
-    height: auto;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.experience-title {
+.subtitle {
     font-family: 'Exo 2';
     font-weight: bold;
-}
-
-
-/*
-    Footer
- */
-
-.footer-topic {
-    font-family: 'Exo 2';
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.footer-contact p {
-    margin-bottom: -20px !important;
-    font-size: 1em;
-}
-
-.footer-contact a img {
-    margin-bottom: -10px;
-    width: 28px;
-    height: 28px;
-}
-
-.copyright-text {
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.copyright-name {
-    font-size: 1.2em;
-    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 30px
 }
