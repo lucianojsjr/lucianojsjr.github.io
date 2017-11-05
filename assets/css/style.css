@@ -55,17 +55,16 @@ table {
  */
 
 .bg-gradient {
-    vertical-align: middle;
+    font-family: 'Dosis', sans-serif;
     height: 100vh;
     background: #136a8a; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, #136a8a, #267872); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, #136a8a, #267872); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #136a8a, #267872); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #136a8a, #3f9f99); /* Standard syntax */
+    background: linear-gradient(to right, #136a8a, #267872); /* Standard syntax */
 }
 
 .title {
-    font-family: 'Exo 2';
     font-weight: bold;
     color: white;
     text-align: center;
@@ -74,7 +73,6 @@ table {
 }
 
 .subtitle {
-    font-family: 'Exo 2';
     font-weight: bold;
     color: white;
     text-align: center;
